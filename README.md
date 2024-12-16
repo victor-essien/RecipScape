@@ -19,13 +19,13 @@ Checkout the live application [here](https://recipscape.netlify.app)
 
 ## Technologies Used 
 ***
-- ** Frontend: ** React, TailwindCSS
-- ** Backend: ** Nodejs, Express
-- ** Database: ** MongoDB
-- ** Authentication: ** JWT Auth, Google Authentication
-- ** Image Hosting: ** Cloudinary
-- ** Text Editing: ** QuillJs (for our post creation)
-- ** Hosting: ** Render(for backend), Netlify(for frontend)
+- **Frontend:** React, TailwindCSS
+- **Backend:** Nodejs, Express
+- **Database:** MongoDB
+- **Authentication:** JWT Auth, Google Authentication
+- **Image Hosting:** Cloudinary
+- **Text Editing:** QuillJs (for our post creation)
+- **Hosting:** Render(for backend), Netlify(for frontend)
 ## Instructions
 ***
 #### Backend
