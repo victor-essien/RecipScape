@@ -1,9 +1,9 @@
 # RecipScape
-***
+
  **Recipscape**  a food inspired social media project where like minds share recipes and connect..
 
 ## Features
-***
+
 - Create Post
 - Google Autherntication
 - Change Password
@@ -14,11 +14,11 @@
 - Search for post
 
 ## Live Demo
-***
+
 Checkout the live application [here](https://recipscape.netlify.app)
 
 ## Technologies Used 
-***
+
 - **Frontend:** React, TailwindCSS
 - **Backend:** Nodejs, Express
 - **Database:** MongoDB
@@ -27,7 +27,7 @@ Checkout the live application [here](https://recipscape.netlify.app)
 - **Text Editing:** QuillJs (for our post creation)
 - **Hosting:** Render(for backend), Netlify(for frontend)
 ## Instructions
-***
+
 #### Backend
 Firstly move to the server directory eg: cd server
 
