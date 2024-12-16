@@ -1,6 +1,6 @@
 # RecipScape
 ***
- ** Recipscape ** is a food inspired social media project
+ **Recipscape**  a food inspired social media project where like minds share recipes and connect..
 
 ## Features
 ***
