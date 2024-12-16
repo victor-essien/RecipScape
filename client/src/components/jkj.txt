@@ -1,0 +1,808 @@
+// src/components/SignUp.js
+
+import React from 'react';
+
+const SignUp = () => {
+  return (
+     <div className='lg:flex min-h-screen  pb-0 lg:pb-16'>
+    <div className=" bg-bgColor">
+     {/*  */}
+
+      {/* Left Section with Form */}
+      <div className="lg:w-1/2 w-full flex items-center lg:bg-none bg-custom-bg justify-center p-8 pb-0">
+        <div className="w-full max-w-md pb-9">
+        <div className="p-2 flex justify-center  ">
+         <img src={ImgLogo} alt="" className='h-11 w-11' />
+          </div>
+          <h2 className="text-2xl text-black font-bold mb-3">Welcome to RecipScape</h2>
+          <p className="text-black mb-3 ">Find and try new recipes</p>
+          <form className="space-y-4">
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-black">Email</label>
+              <input
+                id="email"
+                type="email"
+                className="mt-1 block w-full px-3 py-2 border border-black rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                placeholder="Email"
+              />
+            </div>
+            <div>
+              <label htmlFor="password" className="block text-sm font-medium text-black">Password</label>
+              <input
+                id="password"
+                type="password"
+                className="mt-1 block w-full px-3 py-2 border border-black rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                placeholder="Create a password"
+              />
+            </div>
+            <div>
+              <label htmlFor="birthday" className="block text-sm font-medium text-black">Birthdate</label>
+              <input
+                id="birthday"
+                type="text"
+                className="mt-1 block w-full px-3 py-2 border border-black rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                placeholder="mm/dd/yyyy"
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-secondary text-black py-2 px-4 rounded-md mt-3"
+            >
+              Login
+            </button>
+          </form>
+          <div className="flex items-center justify-center mt-3">
+            <span className="text-black">OR</span>
+          </div>
+          <button className="w-full border-2 border-blue text-blue py-2 px-3 rounded-md mt-4  flex gap-2 items-center justify-center">
+          <FcGoogle className='text-xl text-left' />
+            Continue with Google
+          </button>
+          
+        </div>
+      </div>
+
+       {/* RightSection with Background Image and Text */}
+       <div className="w-1/2   bg-cover bg-center  bg-custom-bg" >
+        <div className="flex flex-col items-center justify-center h-full bg-black bg-opacity-50">
+          <h1 className="text-white text-5xl font-bold mb-4 mx-4">Sign up to get Recipes</h1>
+        </div>
+      </div>
+      </div>
+      <div className='hidden lg:block   h-10 w-full '>
+        <p className=' text-center font-bold text-lg text-black'>Images by <a className='text-blue' rel="noreferrer" target="_blank" href="https://www.freepik.com/">Freepix</a></p>
+      </div>
+    </div>
+  );
+};
+
+export default SignUp;
+
+
+
+  <section
+            id="save"
+            className="w-full  bg-yellow h-screen flex  flex-col-reverse lg:flex-row "
+          >
+            <div className="lg:w-1/2 h-screen flex flex-col lg:pt-24  ">
+              <div className="items-center justify-center p-8 text-center">
+                <h1 className="text-red text-5xl text-center font-bold mt-5">
+                  Save Recipes
+                </h1>
+                <div className="pt-4 px-4">
+                  <p className="text-red text-2xl mb-4 text-center ">
+                    Save Recipes you like to try out at a later time
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 flex flex-col items-center pt-12 order-1">
+              <img src={Saver} alt="" className="rounded-xl h-3/4 w-3/4 lg:h-3/4 lg:w-3/4" />
+            </div>
+          </section>
+
+
+             <section
+            id="connect"
+            className="w-full  bg-ascent-2 h-screen flex flex-col lg:flex-row"
+          >
+            <div className="w-full lg:w-1/2 items-center flex flex-col pt-12 pl-9 pr-6">
+              <img src={Connect} alt="" className="rounded-xl h-full w-full lg:h-3/4 lg:w-3/4" />
+            </div>
+            <div className="lg:w-1/2 h-full flex flex-col lg:pt-24  ">
+              <div className="items-center justify-center p-8 text-center">
+                <h1 className="text-ascent-4 text-5xl text-center font-bold mt-5">
+                  Connect with others
+                </h1>
+                <div className="pt-4 px-4">
+                  <p className="text-ascent-4 text-2xl mb-4 text-center ">
+                    A community for food enthusiasts to share recipes, cooking
+                    tips,culinary traditions and more...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+           <div className="fixed z-50 inset-0 overflow-y-auto ">
+      <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0 ">
+      <div className="fixed inset-0 transition-opacity">
+            <div className="absolute inset-0 bg-[#000] opacity-70"></div>
+          </div>
+        <h2 className="text-3xl font-bold mb-4">Welcome to Pinterest</h2>
+        <form className="space-y-4 w-full">
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+            <input
+              id="email"
+              type="email"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+              placeholder="Email"
+            />
+          </div>
+          <div>
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
+            <input
+              id="password"
+              type="password"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+              placeholder="Password"
+            />
+          </div>
+          <div className="flex items-center justify-between">
+            <a href="#" className="text-sm text-blue-600 hover:underline">Forgot your password?</a>
+          </div>
+          <button type="button" className="w-full bg-red-600 text-white py-2 rounded-md">Log in</button>
+          <div className="flex items-center my-4">
+            <hr className="w-full border-gray-300" />
+            <span className="mx-2 text-gray-400">OR</span>
+            <hr className="w-full border-gray-300" />
+          </div>
+          <button type="button" className="w-full bg-blue-600 text-white py-2 rounded-md">Continue with Facebook</button>
+          <button type="button" className="w-full bg-gray-600 text-white py-2 rounded-md mt-2">Continue with Google</button>
+          <p className="text-sm text-gray-600 mt-4">
+            By continuing, you agree to Pinterest's 
+            <a href="#" className="text-blue-600 hover:underline"> Terms of Service</a> and 
+            <a href="#" className="text-blue-600 hover:underline"> Privacy Policy</a>.
+          </p>
+          <p className="text-sm text-gray-600 mt-4">
+            Not on Pinterest yet? 
+            <button type="button" onClick={switchToSignUp} className="text-blue-600 hover:underline"> Sign up</button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+
+
+     <div className=" px-4  bg-ivory lg:px-10">
+        <div className="topbar hidden md:flex lg:flex w-full fixed  items-center justify-between ">
+          <Link to="/" className="flex items-center gap-2">
+            <div className="p-2 ">
+              <img src={ImgLogo} alt="" className="h-11 w-11" />
+            </div>
+            
+          </Link>
+          {/* Search Bar */}
+          <form
+          className="hidden md:flex lg:flex items-center justify-center"
+          // onSubmit={handleSubmit(handleSearch)}
+        >
+          <TextInput
+            placeholder="Search..."
+            styles="w-[18rem] lg:w-[38rem]  rounded-l-full py-3  "
+            
+          />
+         <button className="bg-black text-white px-6 py-2.5 mt-2 rounded-r-full">Search</button>
+        </form>
+          {/* ICONS */}
+          <div className="flex gap-4 items-end  text-black text-md md:text-xl">
+           <BsMoon />
+           <IoMdNotificationsOutline />
+          </div>
+        </div>
+      </div>
+
+
+
+      
+
+
+          <div>
+      <div className="w-full bg-primary flex flex-col items-center shadow-sm rounded-xl px-6 py-4 ">
+        <div className="w-full flex items-center justify-between border-b pb-5 border-[#66666645]">
+          <Link to={"/profile/" + user?._id} className="flex gap-2">
+            <img
+              src={user?.profileUrl ?? NoProfile}
+              alt={user?.email}
+              className="w-14 h-14 object-cover rounded-full"
+            />
+
+            <div className="flex flex-col justify-center">
+              <p className="text-lg font-medium text-ascent-1">
+                {user?.firstName} {user?.lastName}
+              </p>
+              <span className="text-ascent-2">
+                {user?.profession ?? "No Profession"}
+              </span>
+            </div>
+          </Link>
+
+          <div className="">
+            {user?._id === data?._id ? (
+              <LiaEditSolid
+                size={22}
+                className="text-blue cursor-pointer"
+                onClick={() => dispatch(UpdateProfile(true))}
+              />
+            ) : (
+              <button
+                className="bg-[#0444a430] text-sm text-white p-1 rounded"
+                onClick={() => {}}
+              >
+                <BsPersonFillAdd size={20} className="text-[#0f52b6]" />
+              </button>
+            )}
+          </div>
+        </div>
+
+        <div className="w-full flex flex-col gap-2 py-4 border-b border-[#66666645]">
+          <Link to={"/"}>
+            <div
+              className="flex gap-2 items-center text-ascent-2 pl-2 cursor-pointer"
+              onClick={() => {}}
+            >
+              <IoMdHome className="text-2xl font-medium text-ascent-1" />
+              <span className="text-lg font-medium text-ascent-1">Home</span>
+            </div>
+          </Link>
+          <Link to={"/messages"}>
+            <div
+              className="flex gap-2 items-center text-ascent-2 pl-2 cursor-pointer"
+              onClick={() => {}}
+            >
+              <BiMessageRoundedDetail className="text-2xl font-medium text-ascent-1" />
+              <span className="text-lg font-medium text-ascent-1">
+                Messages
+              </span>
+            </div>
+          </Link>
+          <div className="flex gap-2 items-center text-ascent-2">
+            <CiLocationOn className="text-xl text-ascent-1" />
+            <span>{user?.location ?? "Add Location"}</span>
+          </div>
+
+          <div className="flex gap-2 items-center text-ascent-2">
+            <BsBriefcase className=" text-lg text-ascent-1" />
+            <span>{user?.profession ?? "Add Profession"}</span>
+          </div>
+        </div>
+
+        <div className="w-full flex flex-col gap-2 py-4 border-b border-[#66666645]">
+          <p className="text-xl text-ascent-1 font-semibold">
+            {user?.friends?.length} Friends
+          </p>
+
+          <div className="flex items-center justify-between">
+            <span className="text-ascent-2">Who viewed your profile</span>
+            <span className="text-ascent-1 text-lg">{user?.views?.length}</span>
+          </div>
+
+          <span className="text-base text-blue">
+            {user?.verified ? "Verified Account" : "Not Verified"}
+          </span>
+
+          <div className="flex items-center justify-between">
+            <span className="text-ascent-2">Joined</span>
+            <span className="text-ascent-1 text-base">
+              {moment(user?.createdAt).fromNow()}
+            </span>
+          </div>
+        </div>
+
+        <div className="w-full flex flex-col gap-4 py-4 pb-6">
+          <p className="text-ascent-1 text-lg font-semibold">Social Profile</p>
+
+          <div className="flex gap-2 items-center text-ascent-2">
+            <BsInstagram className=" text-xl text-ascent-1" />
+            <span>Instagram</span>
+          </div>
+          <div className="flex gap-2 items-center text-ascent-2">
+            <FaTwitterSquare className=" text-xl text-ascent-1" />
+            <span>Twitter</span>
+          </div>
+          <div className="flex gap-2 items-center text-ascent-2">
+            <BsFacebook className=" text-xl text-ascent-1" />
+            <span>Facebook</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className="h-screen overflow-y-auto w-full pr-0 pl:0">
+
+              <div className="md:hidden lg:hidden ">
+          <MobNav />
+         </div>
+         <div className="w-full flex  lg:gap-4  md:lg:pt-4 pb-10 h-full">
+        <div className="hidden  lg:w-1/5 h-full md:flex flex-col   overflow-hidden">
+          <Sidebar user={user} />
+        </div>
+      <div className="px-4 pt-4 md:pb-2 pb-5  lg:pb-2 mb-2 bg-white shadow rounded-lg flex-1">
+        <div className="block md:hidden lg:hidden">
+       
+          <Link to={'/'}>
+                
+                <IoMdArrowRoundBack size={25} className="" />
+                </Link>
+              
+        </div>
+        <div className="flex items-center space-x-4 mb-4">
+          <Link to={`/${displayName}`}>
+            <img
+              src={NoProfile}
+              alt={recp?.userId?.firstName}
+              // {user?.email}
+              className="w-12 h-12 object-cover rounded-full"
+            />
+          </Link>
+          <Link to={`/${displayName}`}>
+            <div>
+              <div className="font-bold">
+                {recp?.userId?.firstName} {recp?.userId?.lastName}
+              </div>
+              <div className="text-black flex flex-row gap-3">
+                @{recp?.userId?.userName}{" "}
+                <span className="text-black text-base">
+                  {moment(recp?.createdAt).fromNow()}
+                </span>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="mb-4">
+          <h3 className="font-bold text-lg">{recp?.title}</h3>
+          <p>{recp?.description}</p>
+        </div>
+        <div>
+          <p>{/* {displayedContent} */}</p>
+
+          <ul className="list-disc list-inside grid mb-4 grid-cols-2 gap-4">
+            {recp.ingredients.map((ingredient, index) => (
+              <li key={index}>{ingredient}</li>
+            ))}
+          </ul>
+          <ul className=" gap-4 ml-3 font-medium">
+            {recp.procedure.map((step, index) => (
+              <div className="flex gap-2">
+                <FaStar className="text-black" />
+                <li key={index}>{step}</li>
+              </div>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          {/* <p className="text-black">
+          {showAll === recp?._id
+            ? recp?.procedure
+            : recp?.procedure.slice(0, 350)}
+
+          {recp?.procedure?.length > 351 &&
+            (showAll === recp?._id ? (
+              <span
+                className="text-blue ml-2 font-medium cursor-pointer"
+                onClick={() => setShowAll(0)}
+              >
+                Show Less
+              </span>
+            ) : (
+              <span
+                className="text-blue ml-2 font-medium cursor-pointer"
+                onClick={() => setShowAll(recp?._id)}
+              >
+                Show More
+              </span>
+            ))}
+        </p> */}
+
+          {/* {post?.image && (
+          <img
+            src={post?.image}
+            alt="post image"
+            className="w-full mt-2 rounded-lg"
+          />
+        )} */}
+        </div>
+        {/* <button className="mt-4 text-secondary">See details</button> */}
+        {/* <div className="flex justify-center space-x-4 mb-2">
+   
+      {recp.image.map((url, index) => (
+       <div className="relative p-2 w-[100%] h-[450px] flex justify-center gap-[10px]">
+          <img
+          key={index}
+            className="rounded-lg shadow-lg w-[100%] h-[100%] object-cover  "
+            src={url}
+            alt={`Image ${index + 1}`}
+            
+          />
+            </div>
+          ))}
+    
+    </div> */}
+        {/* Images */}
+        <div className="mt-4">{renderImages()}</div>
+
+        {/* Reaction Action */}
+        <div
+          className="mt-4 flex justify-between items-center px-3 py-2 text-ascent-2
+      text-base border-t border-[#66666645]"
+        >
+          <p
+            className="flex gap-2 items-center text-black font-medium text-base cursor-pointer"
+            onClick={() => {}}
+            // handleLike("/posts/like/" + post?._id)
+          >
+            {recp?.likes?.includes(user?._id) ? (
+              <FaHeart size={17} color="red" />
+            ) : (
+              <CiHeart size={17} />
+            )}
+            {recp?.likes?.length}
+          </p>
+          <p
+            className="flex gap-2 items-center text-black font-medium text-base cursor-pointer"
+            onClick={() => {}}
+            // handleLike("/posts/like/" + post?._id)
+          >
+            {user?.saved?.includes(recp?._id) ? (
+              <FaBookmark size={17} color="" />
+            ) : (
+              <CiBookmark size={17} />
+            )}
+            Save
+          </p>
+
+          <p
+            className="flex gap-2 text-black font-medium items-center text-base cursor-pointer"
+            onClick={() => {
+              setShowComments(showComments === recp._id ? null : recp._id);
+              // getComments(post?._id);
+            }}
+          >
+            <BiComment size={20} />
+            {recp?.comments?.length}
+          </p>
+
+          {user?._id === recp?.userId?._id && (
+            <div
+              className="flex gap-1 items-center text-base text-ascent-1 cursor-pointer"
+              // onClick={() => deleteRecp(recp?._id)}
+            >
+              <MdOutlineDeleteOutline size={20} />
+              <span>Delete</span>
+            </div>
+          )}
+        </div>
+        {/* Comments */}
+        <form
+          // onSubmit={handleSubmit(onSubmit)}
+          className="w-full border-b border-[#66666645]"
+        >
+          <div className="w-full flex items-center gap-2 py-4">
+            <img
+              src={user?.profileUrl ?? NoProfile}
+              alt="User Image"
+              className="w-10 h-10 rounded-full  object-cover"
+            />
+
+            <TextInput
+              name="comment"
+              styles="w-full rounded-full py-4 text-lg "
+               placeholder="Post Your Reply"
+              // placeholder={"Comment this post"}
+              register={register("comment", {
+                required: "Comment can not be empty",
+              })}
+              error={errors.comment ? errors.comment.message : ""}
+            />
+             <div className="flex items-end justify-end pb-2">
+            {/* {loading ? (
+              <Loading />
+            ) : ( */}
+              <button
+                title="Submit"
+                type="submit"
+               
+                className="bg-secondary text-dark py-3 px-4 rounded-2xl font-bold text-base"
+              >
+               Post
+              </button>
+            {/* )} */}
+          </div>
+          </div>
+
+         
+          
+        </form>
+        {loading ? (
+  <Loading />
+) : comments?.length > 0 ? (
+  comments?.map((comment) => (
+    <div className="w-full py-2" key={comment?._id}>
+      <div className="flex gap-3 items-center mb-1">
+        <Link to={"/profile/" + comment?.userId?._id}>
+          <img
+            src={comment?.userId?.profileUrl ?? NoProfile}
+            alt={comment?.userId?.firstName}
+            className="w-10 h-10 rounded-full object-cover"
+          />
+        </Link>
+        <div>
+          <Link to={"/profile/" + comment?.userId?._id}>
+            <p className="font-medium text-base ">
+              {comment?.userId?.firstName} {comment?.userId?.lastName}
+            </p>
+          </Link>
+          <span className=" text-sm">
+            {moment(comment?.createdAt ?? "2023-05-25").fromNow()}
+          </span>
+        </div>
+      </div>
+
+      <div className="ml-12">
+        <p className="">{comment?.comment}</p>
+
+        <div className="mt-2 flex gap-6">
+          <p
+            className="flex gap-2 items-center text-base  cursor-pointer"
+            onClick={() => {
+              handleLike("/posts/like-comment/" + comment?._id);
+            }}
+          >
+            {comment?.likes?.includes(user?._id) ? (
+              <BiSolidLike size={20} color="blue" />
+            ) : (
+              <BiLike size={20} />
+            )}
+            {comment?.likes?.length} Likes
+          </p>
+          <span
+            className="text-blue cursor-pointer"
+            onClick={() => setReplyComments(comment?._id)}
+          >
+            Reply
+          </span>
+        </div>
+
+        {/* {replyComments === comment?._id && (
+          <CommentForm
+            user={user}
+            id={comment?._id}
+            replyAt={comment?.from}
+            getComments={() => getComments(post?._id)}
+          />
+        )} */}
+      </div>
+
+      {/* REPLIES */}
+
+      <div className="py-2 px-8 mt-6">
+        {comment?.replies?.length > 0 && (
+          <p
+            className="text-base text-secondary cursor-pointer"
+            onClick={() =>
+              setShowReply(
+                showReply === comment?.replies?._id
+                  ? 0
+                  : comment?.replies?._id
+              )
+            }
+          >
+            Show Replies ({comment?.replies?.length})
+          </p>
+        )}
+
+        {/* {showReply === comment?.replies?._id &&
+          comment?.replies?.map((reply) => (
+            <ReplyCard
+              reply={reply}
+              user={user}
+              key={reply?._id}
+              handleLike={() =>
+                handleLike(
+                  "/posts/like-comment/" +
+                    comment?._id +
+                    "/" +
+                    reply?._id
+                )
+              }
+            />
+          ))} */}
+      </div>
+    </div>
+  ))
+) : (
+  <span className="flex text-sm py-4 text-ascent-2 text-center">
+    No Comments, be first to comment
+  </span>
+)}
+</div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+ <div className="flex-1 overflow-y-auto">
+  <div className="w-full">
+    {/* Main Comment */}
+    <div className="mb-4">
+      {/* User Info */}
+      <div className="flex gap-3 items-center mb-2">
+        {/* User Image */}
+        <Link to={`/${comment?.userId?.userName}`} state={comment?.userId?._id}>
+          <img
+            src={comment?.userId?.profileUrl ?? NoProfile}
+            alt={comment?.userId?.firstName}
+            className="w-8 h-8 rounded-full object-cover"
+          />
+        </Link>
+
+        <div className="shadow-md hover:shadow-lg hover:shadow-gray-300 transition-shadow py-3 rounded-lg px-4">
+          <Link to={`/${comment?.userId?.userName}`} state={comment?.userId?._id}>
+            <p className="font-medium text-base text-gray-800">
+              {comment?.userId?.firstName} {comment?.userId?.lastName}
+            </p>
+          </Link>
+          <div>
+            <p className="text-gray-700">{comment?.comment}</p>
+            {/* Meta and Actions */}
+            <div className="mt-2 flex gap-6 items-center text-sm">
+              <span className="text-sm text-gray-500">
+                {moment(comment?.createdAt).fromNow()}
+              </span>
+              <button
+                className="flex gap-2 items-center text-gray-600 hover:text-blue-600"
+                onClick={() => {
+                  handleLike(`/post/like-comment/${comment?._id}`);
+                }}
+              >
+                {comment?.likes?.includes(user?._id) ? (
+                  <FaHeart size={17} className="text-red-500" />
+                ) : (
+                  <CiHeart size={17} />
+                )}
+                <span>{comment?.likes?.length} Likes</span>
+              </button>
+              <button className="text-secondary font-medium hover:underline cursor-pointer">
+                Reply
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Replies */}
+    <div className="mt-6 shadow-md hover:shadow-lg hover:shadow-gray-300 transition-shadow rounded-lg">
+      {replies?.map((reply) => (
+        <div key={reply?.rid} className="ml-6">
+          <div className="flex gap-3 items-center mb-1">
+            <Link to={`/${reply?.userId?.userName}`} state={reply?.userId?._id}>
+              <img
+                src={reply?.userId?.profileUrl ?? NoProfile}
+                alt={reply?.userId?.firstName}
+                className="w-8 h-8 rounded-full object-cover"
+              />
+                        </Link>
+            <div>
+              <Link to={`/${reply?.userId?.userName}`} state={reply?.userId?._id}>
+                <p className="font-medium text-base">
+                  {reply?.userId?.firstName} {reply?.userId?.lastName}
+                </p>
+              </Link>
+            </div>
+          </div>
+          <div className="ml-12">
+            <p className="text-gray-700">{reply?.comment}</p>
+            <div className="mt-2 flex gap-6 items-center text-sm">
+              <span className="text-sm text-gray">
+                {moment(reply?.createdAt).fromNow()}
+              </span>
+              <button
+                className="flex gap-2 items-center text-gray-600 hover:text-blue-600"
+                onClick={() =>
+                  handleLikeReply(`/post/like-comment/${comment?._id}/${reply?._id}`)
+                }
+              >
+                {reply?.likes?.includes(user?._id) ? (
+                  <FaHeart size={17} color="red" />
+                ) : (
+                  <CiHeart
+                  size={17} />
+                )}
+                <span>{reply?.likes?.length} Likes</span>
+              </button>
+              <button
+                className="text-secondary font-medium hover:underline cursor-pointer"
+                onClick={() => handleReply({ 
+                  firstName: reply.userId?.firstName, 
+                  lastName: reply.userId?.lastName 
+                })}
+              >
+                Reply
+              </button>
+            </div>
+          </div>
+
+          {/* Reply Form */}
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="mt-4 ml-12"
+          >
+            <div className="flex items-center gap-2">
+              <input
+                value={replyTo} // Pre-filled with the @username if replying
+                onChange={(e) => setReplyTo(e.target.value)} // Allow editing if needed
+                className="w-full rounded-full bg-gray-200 py-2 px-4 text-lg"
+                placeholder="Post your reply"
+              />
+              <button
+                title="Submit"
+                type="submit"
+                className="bg-secondary text-dark py-3 px-4 rounded-2xl font-bold text-base"
+                
+             >
+                Reply
+              </button>
+            </div>
+          </form>
+        </div>
+      ))}
+    </div>
+  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  

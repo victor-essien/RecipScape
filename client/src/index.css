@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.smtopbar{
+  position: fixed;
+  bottom: 0px;
+
+}
+.topbar {
+  position: sticky;
+  top: 0px;
+  z-index: 109;
+}
+.messagebar {
+}
+
+.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+
+.ql-editor{
+
+}
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px; /* Adjust width as needed */
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.editor-content .ql-container {
+  min-height: 300px; /* Height of editor area */
+}
+
+#custom-toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+
+}
+
+#custom-toolbar .ql-bold,
+#custom-toolbar .ql-italic,
+#custom-toolbar .ql-header,
+#custom-toolbar .ql-list, 
+#custom-toolbar .ql-emoji {
+ 
+  font-size: 28px;
+  color: black;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#custom-toolbar .ql-bold:hover,
+#custom-toolbar .ql-italic:hover,
+#custom-toolbar .ql-header:hover,
+#custom-toolbar .ql-image:hover {
+  color: rgb(255 193 7); /* Color on hover */
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: rgba(255 193 7);
+    box-shadow: 0 0 0 0 #f4ecc2;
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: rgba(255 193 7);
+    box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+  }
+
+  100% {
+    transform: scale(0.8);
+    background-color: rgba(31, 29, 29);
+   
+    box-shadow: 0 0 0 0 #f4ecc2;
+  }
+}
+
+@layer base {
+  :root {
+    /* Background Color */
+    --color-bg: 255 255 240; /* Ivory (#FFFFF0) */
+    --head-bg:  157 193 131; 
+    /* Primary Colors */
+    --color-primary: 157 193 131; /* Sage Green (#9DC183) */
+    --color-secondary: 255 193 7; /* Mustard Yellow (#FFC107) */
+    
+    /* Accent Colors */
+    
+    --color-ascent1: 255 111 97; /* Coral Pink (#FF6F61) */
+    --color-ascent2: 230 230 250; /* Soft Lavender (#E6E6FA) */
+    --color-ascent3: 188 143 143; /* Pale Taupe (#BC8F8F) */
+    --color-ascent4: 238, 67, 52;
+    /* Additional Colors */
+    --color-terra: 224 123 57; /* Terracotta (#E07B39) */
+    --color-white: 255 255 255; /* White (#FFFFFF) */
+    --color-black: 54 69 79; /* Charcoal Gray (#36454F) */
+    --color-red: 220 38 38;
+    --color-yellow: 254 240 138;
+    --color-blue: 59 130 246;
+    --color-dark: 31, 29, 29;
+    --color-gray: 224, 224, 224;  /*232, 223, 223*/
+    --color-gra: 128, 128, 128;
+}
+
+  /* //15 23 42  21 30 49*/
+  [data-theme="dark"] {
+    --color-bg: 12 12 12;
+    --color-primary: 31 31 31;
+    --color-secondary: 47 45 48;
+    --color-ascent1: 255 255 255;
+    --color-ascent2: 164 161 162;
+    --color-blue: 6 90 216;
+    /* //16 176 255; */
+    --color-white: 255 255 255;
+  }
+}
